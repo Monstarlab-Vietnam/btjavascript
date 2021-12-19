@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>- What are the differences between a variable that is: `null`, `undefined`?</h2>
+    <br>
+    <p>Biến null là biến đã được cấp bộ nhớ và giá trị của nó là rỗng, còn undefined là biến chưa được khai báo vùng nhớ hay nói cách khác, undefined là biến không tồn tại</p>
+    <hr>
+    <h2>- What is `use strict`? what are the advantages and disadvantages to using it?</h2>
+    <p>Use strict dịch sang tiếng việt thì có nghĩa là sử dụng sự nghiêm ngặt. Khi một đoạn lệnh được khai báo use strict thì tất cả các dòng code ở phía dưới dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp</p>
+    <br>
+    <p>điểm mạnh của use strict:</p>
+        <br>
+        <p>-bắt được một số mỗi thường gặp và ném ra ngoại lệ</p><br>
+        <p>-Ngăn chặn và bắt lỗi khi các hành dộng không rõ ràng và không an toàn như cố giành quyền truy cập vào các đôi tượng toàn cục</p>
+        <br><p>-Nó tắt đi những tính năng khó hiểu mà làm lúng túng nhưng hệ thông có độ nhạy bén thấp</p>
+    </p>
+    <p>điểm yếu của strict mode</p><br>
+    <p>
+        -chế độ strict mode sẽ làm mất một số tính năng nhất định
+    </p>
+    <hr>
+    <h2>- What are the differences between `==` and `===`? Write an example for each case (if any)?</h2>
+    <br>
+    <p>== chỉ so sánh giá trị của 2 biến, ví dụ: 9 == "9" sẽ trả về true
+        === so sánh giá trị của cả giá trị và kiểu dữ liệu của biến, ví dụ 9 === "9" sẽ trả về false
+
+    </p>
+    <hr>
+    <script>
+        console.log('nếu sử dụng == để so sánh 9 và "9"');
+        console.log(9 == "9");
+        console.log('nếu sử dụng === để so sánh 9 và "9"');
+        console.log(9 === "9");
+        function findlossvalue(val){
+    let result = [];
+    for(let i = 1; i<=9;i++){
+        let numval = val.replace("*",i);
+        if(numval %3 == 0){
+        result.push(numval);
+    }       
+    }
+    return result;
+}
+console.log(findlossvalue("1234567890*"));
+// if(removevalue !== -1){
+//     arr.slice(removevalue,1)
+// }
+
+    </script>
+    <h2>- Give a list of `Falsy` values in Javascript.</h2>
+    <br>
+    <p>null, NaN, 0, "", undefined, false</p>
+    <hr>
+</body>
+</html>
